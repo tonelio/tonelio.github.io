@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Example | CSS Tutorial | HTML.net</title>
+</head>
+<body>
+ {
+		background-color: #FFCC66;
+	}
+
+	h1 {
+		color: #990000;
+		background-color: #FC9804;
+	}
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+	  background-color: #ffffff;
+	  /*background-image: url("bgimages/1.jpg");*/
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  margin: 0px 0px 0px 0px;
+	}
+p {
+	font-family: Lato;
+	color: #454545
+	font-size: 20px;
+	line-height: 8px;
+}
+
+span {font-family: Lato;
+	color: #ffffff;
+	font-size: 15px;	
+	vertical-align: middle;
+	line-height: normal;
+	font-weight: 700;
+	}
+			
+	a{ text-decoration:none;
+	}
+h2 {font-family: Lato;
+	font-weight: bold;
+	color: #454545;
+	font-size: 38px;
+		margin: 15px 0px 0px 8px;
+	}
+a:link {
+		color: #ff6d1e;
+}
+a:visited {
+		color: #2e67bc;
+}
+a:hover {
+		color: #f99e22;
+}
+.atasan {
+	height: 5%;
+	width: 100%;
+	vertical-align: middle;
+	background-color: #454545;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	line-height: 100px;
+	text-align: left;
+}
+div {
+	margin: 0px 0px 0px 0px;
+}
+#test {
+		background-attachment: fixed;
+		height: 900px;
+		width: 1139px;
+		margin: auto;
+		margin-top: -15px;
+		/*background: #e1e1e1;*/
+		
+		vertical-align: center;
+		text-align: center;
+}
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 147px;
+	height: 147px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
